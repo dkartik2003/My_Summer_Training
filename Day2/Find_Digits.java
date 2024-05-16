@@ -1,3 +1,4 @@
+package Day2;
 public class Find_Digits {
     public static void main(String[] args) {
       int n=123;

@@ -1,3 +1,4 @@
+package Day2;
 public class AddTheDigits {
   public static void main(String[] args) {
     int num = 1234;

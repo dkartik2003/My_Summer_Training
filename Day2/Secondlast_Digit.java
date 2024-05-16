@@ -1,3 +1,4 @@
+package Day2;
 public class Secondlast_Digit {
     public static void main(String[] args) {
       int i=123;

@@ -4,14 +4,21 @@ public class Function {
   public static void main(String[] args) {
     System.out.println(Add());//function calling
   }
-  public static int  Add(){//function declaration with no parameterized which is called as on parameterized
+  public static int  Add(){//function declaration with no parameterized which is called as non parameterized function
     int a =1;//function defination
     int b =3;//function defination
     int c =a+b;//function defination
-    return c;// here if we return a value then we have to modify it in the function
+    return c-sub();// here if we return a value then we have to modify it in the function
 
     //System.out.println(c);//function defination
   }
+public static int sub(){
+int a =20;
+int b=10;
+int c1=a-b;
+return c1;
+}
+
 }
 
 

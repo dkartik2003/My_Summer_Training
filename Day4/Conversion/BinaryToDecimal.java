@@ -1,4 +1,4 @@
-package Day4;
+package Day4.Conversion;
 
 public class BinaryToDecimal {
   public static void main(String[] args) {

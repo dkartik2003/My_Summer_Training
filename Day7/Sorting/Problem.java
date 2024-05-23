@@ -13,13 +13,16 @@ public class Problem {
     }
     int temp=0;
     int diff=0;
-    for(int i=0;i<n;i++){
+    int sum=0;    for(int i=0;i<n;i++){
       for(int j=0;j<n-1-i-1;j++ ){
         if(a[j]<a[j+1]){
           diff=a[j]-a[j+1];
+          sum+=diff;
             temp=a[j];        //swap
             a[j]=a[j+1];
             a[j+1]=temp;
+            System.out.println(diff);
+            System.out.println(sum);
             }
 
       }

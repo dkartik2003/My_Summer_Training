@@ -15,10 +15,13 @@ public class KendensAlgorithmBruteForce {
 for(int i=0;i<s;i++){
 a[i]=sc.nextInt();
 }
-for(int i=0;i<n;i++){
+for(int i=0;i<s;i++){
 
-for(int j=0;j<n;j++){
+for(int j=0;j<s;j++){
   sum+=a[j];
+  if(sum>max){
+    max=sum;
+  }
 
 }
 }

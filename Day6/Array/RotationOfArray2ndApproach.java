@@ -14,8 +14,14 @@ public class RotationOfArray2ndApproach {
     }
     System.out.println("Enter the point k : ");
     int k = sc.nextInt();
-   for(int i=0;i<k;i++){
+    int aux[]=new int[s];
+   for(int i=k;i>=0;i--){
+      aux[k]=a[i];
     
+
+   }
+   for(int i=0;i<s;i++){
+    System.out.println(aux[i]);
 
    }
     

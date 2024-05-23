@@ -21,10 +21,10 @@ public class MinDiffofaSortedArray {
             temp=a[j];        //swap
             a[j]=a[j+1];
             a[j+1]=temp;
-            System.out.println(diff);
-            System.out.println(sum);
+           
             }
-
+            // System.out.println(diff);
+            // System.out.println(sum);
       }
 
     }

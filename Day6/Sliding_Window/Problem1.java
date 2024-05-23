@@ -21,13 +21,13 @@ int sliding_sum=0;
 for(int i=0;i<k;i++){
 sliding_sum+=a[i];
 }
-//System.out.println("("+0+","+(k+1)+"-->"+sliding_sum);
+System.out.println("("+0+","+(k-1)+"-->"+sliding_sum);
 
 for(int i=1;i<s-k+1;i++){
   sliding_sum=(-a[i-1]+sliding_sum-a[k+i-1]);
-}
-System.out.println("("+i+","+(i+k+1)+"-->"+sliding_sum);
 
+System.out.println("("+i+","+(i+k-1)+"-->"+sliding_sum);
+}
   }
 }
 

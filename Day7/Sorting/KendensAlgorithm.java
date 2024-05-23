@@ -27,3 +27,6 @@ max=sum;
 System.out.println(max);
 }
 }
+
+
+//Time complexity  O(n)

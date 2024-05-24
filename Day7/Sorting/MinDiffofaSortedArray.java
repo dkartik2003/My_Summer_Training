@@ -8,7 +8,7 @@ public class MinDiffofaSortedArray {
     System.out.println("Enter the size of the array: ");
     int n=sc.nextInt();
     int a[]=new int[n];
-    for(int i=0;i<n;i++){//input
+    for(int i=0;i<n;i++){//input 
       a[i]=sc.nextInt();
     }
     int temp=0;
@@ -16,9 +16,8 @@ public class MinDiffofaSortedArray {
     int sum=0;    for(int i=0;i<n;i++){
       for(int j=0;j<n-1-i-1;j++ ){
         if(a[j]<a[j+1]){
-          diff=a[j]-a[j+1];
-          sum+=diff;
-            temp=a[j];        //swap
+         
+            temp=a[j];        //swap 
             a[j]=a[j+1];
             a[j+1]=temp;
            
@@ -26,6 +25,9 @@ public class MinDiffofaSortedArray {
             // System.out.println(diff);
             // System.out.println(sum);
       }
+
+    }
+    for(int i=0;i<s;i++){
 
     }
     for(int i=0;i<n;i++){

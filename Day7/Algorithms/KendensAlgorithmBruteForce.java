@@ -1,4 +1,4 @@
-package Day7.Sorting;
+package Day7.Algorithms;
 
 import java.util.*;
 

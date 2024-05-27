@@ -1,5 +1,7 @@
 package Day7;
+
 import java.util.*;
+
 public class SortEvenSortOdd {
   public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
@@ -22,22 +24,24 @@ public class SortEvenSortOdd {
       }
     }
 
-    //selectionsort for even no.
+    //bubblesort for even no.
     int temp=0;
     int req_index=0;
-    for(int i=0;i<s2;i++){//Logic
-     req_index=i;
-      for(int j=i;j<s2;j++){
-          if(even[req_index]>=even[j]){
-            req_index=j;
-
-          }
-          //swap
-          temp=even[i];
-          even[i]=even[req_index];
-          even[req_index]=temp;
+   for(int i=0;i<s;i++){
+    
+    for(int j=0;j<s-i-1;j++){
+      if(a[j]>a[j+1]){
+          a[j]=temp;
+          temp=a[j+1];
+          a[j+i]=a[i]
       }
-    }
+
+      }
+   }
+   for(int i=0;i<s;i++){
+    System.out.println(even[i]);
+
+   }
 
     //forodd no.
 
@@ -46,13 +50,13 @@ public class SortEvenSortOdd {
 
 
 
-    int finalarr[]=new int[s];
-    for(int i=0;i<s;i++){
-      finalarr[i]=even[i];
+    // int finalarr[]=new int[s];
+    // for(int i=0;i<s;i++){
+    //   finalarr[i]=even[i];
 
-    }
-    for(int i=0;i<s2;i++){
-      System.out.println("The elements are: "+finalarr[i]);
-    }
+    // }
+    // for(int i=0;i<s2;i++){
+    //   System.out.println("The elements are: "+finalarr[i]);
+    // }
   }
 }

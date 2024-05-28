@@ -25,12 +25,21 @@ public class Stack2 {// Stack with help of array
   }
 
   public void push(int element) throws Exception {
-    if (isFull()) {
-      throw new Exception("The Stack is full");
-    }
+    try{
+      if (isFull()) {
+        throw new Exception("The Stack is full");
+      }
+      index++;
+      a[index] = element;
+  
 
-    index++;
-    a[index] = element;
+
+    }catch(Exception e){
+      System.out.println("The Stack is full");
+      e.getStackTrace();
+    }
+    
+   
   }
 
   public int pop(int element) throws Exception {
@@ -65,6 +74,10 @@ public class Stack2 {// Stack with help of array
 
     sc.push(4);
     sc.display();
+    sc.push(98);
+    sc.push(98);
+    sc.push(98);
+
 
   }
 

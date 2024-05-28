@@ -1,6 +1,6 @@
 package Day9.OOPS.Polymorphism.Function_Overriding;
 
-public class Function_Overriding {//Function overriding is a when we want to change the operation or working of the function/method.function name and parameters pass must be same.
+public class Function_Overriding {//Function overriding is a when we want to change the operation or working of the function/method.function name and parameters pass must be same.Runtime polymeorphism
   public void Add(){
     int a=10;
     int b=20;

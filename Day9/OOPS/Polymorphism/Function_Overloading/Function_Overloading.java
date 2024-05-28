@@ -1,4 +1,5 @@
-package Day9.OOPS.Polymorphism.Function_Overloading;//Function overloading is a when the class name syntax and return type of the function is same but the parameters are different.
+package Day9.OOPS.Polymorphism.Function_Overloading;//Function overloading is a when the class name syntax and return type of the function is same but the parameters are different.Compile time Polymorphism
+
 import java.util.*;
 public class Function_Overloading extends Object{
   public void Add(){

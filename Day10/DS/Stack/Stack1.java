@@ -5,6 +5,7 @@ import java.util.*;
 public class Stack1 {
  
     public static void main(String[] args) {
+      
       Stack<Integer> sc = new Stack<>();
       System.out.println(sc.isEmpty());
       sc.push(55);

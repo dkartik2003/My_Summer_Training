@@ -4,7 +4,7 @@ import Day10.DS.LinkedList.SingleLLImp;
 
 public class SingleLLImp {
 
-  public static void main(String args[]) {
+  public static void main(String args[]) throws Exception{
     Linkedlist ls = new Linkedlist();
     ls.addAtEnd(1);
     ls.addAtEnd(2);
@@ -13,11 +13,11 @@ public class SingleLLImp {
     ls.display();
     ls.atAtBegining(0);
     ls.display();
-    ls.add_at_an_index(2, 41);
+    ls.addAtIndex(2, 41);
     ls.display();
-    ls.Delete_at_beginning();
+    ls.deleteAtbeginning();
     ls.display();
-    ls.Delete_at_index(2);
+    ls.deleteAtIndex(2);
     ls.display();
     ls.findElementOfIndex();
 
@@ -67,7 +67,7 @@ class Linkedlist {
     size++;
   }
 
-  public void add_at_an_index(int ind, int val) {
+  public void addAtIndex(int ind, int val) {
     size++;
     LL_node node = new LL_node(val);
     int count = 0;
@@ -83,14 +83,14 @@ class Linkedlist {
 
   }
 
-  public void Delete_at_beginning() {
+  public void deleteAtbeginning() {
     if (this.head == null)
       return;
     this.size--;
     this.head = this.head.next;
   }
 
-  public void Delete_at_index(int ind) {
+  public void deleteAtIndex(int ind) {
     LL_node temp = this.head;
     int count = 0;
     while (count < (ind - 1)) {
@@ -102,12 +102,30 @@ class Linkedlist {
     size--;
   }
 
-  public int findElementOfIndex(int ind){
-    LL_node temp=this.head;
-    int count=0;
-    while(count<ind){
-
+  public int findElementOfIndex(int ind) throws Exception{
+    LL_node temp = this.head;
+    int count = 0;
+    while (temp != null && count < ind) {
+        temp = temp.next;
+        count++;
     }
+    if (temp == null) {
+        throw new IndexOutOfBoundsException("Index " + ind + " is out of bounds");
+    }
+    return temp.val; // Assuming the node has a value field
+}
+
+
+  public int findMidElements(int ind){
+    LL_node sp=this.head;
+    LL_node temp=this.head;
+    LL_node fp=this.head;
+    int count=0;
+    while(fp.next!=null&&fp!=null){
+      sp=this.head.next;
+      fp=this.head.next.next;
+    }
+return sp.next;
   }
 
   public void display() {

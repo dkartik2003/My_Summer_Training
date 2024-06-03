@@ -6,6 +6,7 @@ public class Prob2 {
         int target = 50;
         int ans = returnIndex(target, arr, 0);
         System.out.println(ans);
+       
     }
 
     public static int returnIndex(int target, int arr[], int index) {
@@ -22,4 +23,8 @@ public class Prob2 {
         // Recursive call to search in the rest of the array
         return returnIndex(target, arr, index + 1);
     }
+
+    
 }
+
+

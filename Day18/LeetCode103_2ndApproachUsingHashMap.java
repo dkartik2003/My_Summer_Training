@@ -1,5 +1,6 @@
 package Day18;
 import java.util.*;
+import java.util.Collections.*;
 public class LeetCode103_2ndApproachUsingHashMap {
   public class TreeNode {
     int val;
@@ -28,7 +29,7 @@ public class LeetCode103_2ndApproachUsingHashMap {
     for(Integer i:map.keySet()){
         if(i%2==1){
             // rev
-            ans.add(map.get(i).);
+            ans.add(map.get(i).reversed());
         }else{
             ans.add(map.get(i));
         }
